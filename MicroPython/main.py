@@ -11,14 +11,14 @@ display.clear()
 display.show(Image.HAPPY)
 
 while True:
-# turns the LED on
+    # turns the LED on
     if button_a.is_pressed():
         display.clear()
-        display.show(Image.Yes)
+        display.show(Image.YES)
         pin16.write_digital(1)
 
-# turns the LED off
+    # turns the LED off
     if button_b.is_pressed():
         display.clear()
-        display.show(Image.No)
+        display.show(Image.NO)
         pin16.write_digital(0)
