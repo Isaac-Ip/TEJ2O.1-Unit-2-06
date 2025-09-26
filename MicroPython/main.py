@@ -1,10 +1,24 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
+Created by: Isaac Ip
+Created on: Sep 2025
 This module is a Micro:bit MicroPython program
+This program turns an LED on and off
 """
 
 from microbit import *
 
+display.clear()
+display.show(Image.HAPPY)
 
-display.scroll("Hello, World!")
+while True:
+# turns the LED on
+    if button_a.is_pressed():
+        display.clear()
+        display.show(Image.Yes)
+        pin16.write_digital(1)
+
+# turns the LED off
+    if button_b.is_pressed():
+        display.clear()
+        display.show(Image.No)
+        pin16.write_digital(0)
