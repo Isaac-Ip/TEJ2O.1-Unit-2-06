@@ -11,11 +11,11 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
     // turn LED on
     basic.showIcon(IconNames.Yes)
-    pins.digitalWritePin(DigitalPin.P16, 0)
+    pins.digitalWritePin(DigitalPin.P16, 1)
 })
 
 input.onButtonPressed(Button.B, function () {
     // turn LED off
     basic.showIcon(IconNames.No)
-    pins.digitalWritePin(DigitalPin.P16, 1)
+    pins.digitalWritePin(DigitalPin.P16, 0)
 })
